@@ -374,13 +374,17 @@ header .container .links ul li a:hover {
 }
 
 .message .container form input {
-    width: calc(100% - 40px);
+    width: calc(100% - 45px);
     padding: 20px;
     border-radius: 10px;
     background-color: transparent;
     border: solid 2px #8dcca9;
     position: relative;
 
+}
+
+.message .container form input::placeholder {
+    color: rgb(255 255 255 / 80%);
 }
 
 
@@ -393,6 +397,11 @@ header .container .links ul li a:hover {
     background-color: transparent;
     resize: none;
     border: solid 2px #8dcca9;
+}
+
+.message .container form textarea::placeholder {
+    color: rgb(255 255 255 / 80%);
+
 }
 
 @media (max-width:767px) {
@@ -1156,6 +1165,10 @@ footer div {
     width: 100%;
 }
 
+.form form .text input::placeholder {
+    color: rgb(255 255 255 / 80%);
+}
+
 .form form .catagory {
     margin-bottom: 20px;
 }
@@ -1241,6 +1254,7 @@ footer div {
     color: rgb(85 85 85 / 50%);
 }
 
+
 .box2 .check label::before {
     content: " ";
     position: absolute;
@@ -1283,6 +1297,10 @@ footer div {
     border-radius: 10px;
     background-color: var(--color-green);
     margin-bottom: 20px;
+}
+
+.form form textarea::placeholder {
+    color: rgb(255 255 255 / 80%);
 }
 
 .form form input[type="submit"] {
